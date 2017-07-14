@@ -16,8 +16,8 @@ typedef struct _LINKED_LIST {
 	int count;
 }LINKED_LIST;
 
-LINKED_LIST* newList();
-STR_NODE* newNode(char* str);
-void append(LINKED_LIST* list, STR_NODE* node);
-void printList(STR_NODE* first);
+LINKED_LIST* newList(); //returns a pointer to a new mallocated list O(1)
+STR_NODE* newNode(char* str); //return a pointer to a new mallocated node O(1)
+void append(LINKED_LIST* list, STR_NODE* node); //appends a given node to the end of a linked list O(1)
+void printList(STR_NODE* first); //prints the list as a formated chain O(n)
 #endif
